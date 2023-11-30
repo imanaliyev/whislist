@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 200ms;
+
+}
 ul{
     width: 300px;
     height: 400px;
@@ -6,10 +13,11 @@ ul{
     justify-content: center;
     flex-direction: column;
     list-style: none;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     transition: 500ms;
     cursor: pointer;
     position: relative;
+    margin-bottom: 20px;
     
 
 }
@@ -30,8 +38,8 @@ img{
 }
 .urek{
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 20px;
+    top: 20px;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -45,14 +53,41 @@ img{
 }
 .wish-list{
     width: 100%;
-    min-height: 40vh;
+    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+    background-color: rgb(22, 14, 14);
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(180, 140, 65);
+    color: beige;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover{
+    scale: 1.01;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+    transition: 200ms;
     
-    background-color: rgb(187, 187, 187);
+
+
+}
+.theme{
+    margin: 0;
 }
 .display-wishlist{
-   
-
+    background-color: rgb(105, 105, 105);
 }
